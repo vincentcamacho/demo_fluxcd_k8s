@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: vincenup/mrrobot:1.1
+          image: vincenup/mrrobot:1.2
           imagePullPolicy: Always
           ports:
             - containerPort: 80
