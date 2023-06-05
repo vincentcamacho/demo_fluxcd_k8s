@@ -9,12 +9,12 @@ spec:
   ingressClassName: nginx
   rules:
     - host: rocket.medmucsvc-dev.zeiss.org
-      paths:
-        - path: /
-          pathType: Prefix
-          backend:
-            service:
-              name: nginx-service
-              port:
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: nginx-service
+                port:
                   number: 8087
-
